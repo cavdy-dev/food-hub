@@ -6,22 +6,21 @@ const MenuService = {
 
   // fetching all the data/meals
   getMenuOfDay() {
-    return dummyData.meals.map((meal) => {
-      const newMeal = new MealModel();
-      newMeal.id = meal.id;
-      newMeal.name = meal.name;
-      newMeal.size = meal.size;
-      newMeal.price = meal.price;
-      return newMeal;
+    return dummyData.meals.map((menu) => {
+      const newMenu = new MealModel();
+      newMenu.id = menu.id;
+      newMenu.name = menu.name;
+      newMenu.size = menu.size;
+      newMenu.price = menu.price;
+      return newMenu;
     });
   },
 
   // adding meal of the day
-  addMenuOfDay(meal) {
-    // checking for meal id, deleting and updating the array
-    meal.id = 1;
-    dummyData.meals.splice(0, 1, meal);
-    return meal;
+  addMenuOfDay(menu) {
+    menu.id = 1;
+    dummyData.meals.splice(0, 1, menu);
+    return menu;
   },
 
 };

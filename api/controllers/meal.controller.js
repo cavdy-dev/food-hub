@@ -1,5 +1,6 @@
 import MealService from '../services/meal.service';
 
+// created our meal controller
 const MealController = {
   fetchAllMeals(req, res) {
     const allMeals = MealService.fetchAllMeals();

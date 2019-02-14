@@ -1,3 +1,4 @@
+// created our Meal Schema
 class Meal {
   constructor() {
     this.id = null;

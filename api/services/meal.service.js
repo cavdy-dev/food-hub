@@ -18,12 +18,12 @@ const MealService = {
     const lastId = dummyData.meals[mealLength - 1].id;
     const newId = lastId + 1;
     meal.id = newId;
-    dummyData.push(meal);
+    dummyData.meals.push(meal);
     return meal;
   },
 
   getMeal(id) {
-    const meal = dummyData.meals.find(meal => meal.id = id);
+    const meal = dummyData.meals.find(meal => meal.id == id);
     return meal || {};
   },
 };

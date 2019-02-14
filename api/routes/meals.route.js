@@ -1,19 +1,10 @@
 import express from 'express';
-import MealService from '../services/meal.service';
-
-const mealService = new MealService();
+import MealController from '../controllers/meal.controller';
 
 const router = express.Router();
-router.get('/', (req, res) => {
-  res.status(200).send(mealService.getAll());
-});
 
-router.post('/', (req, res) => {
-  res.status(200).send(mealService.addMeal(req.body));
-});
-
-router.get('/:id', (req, res) => {
-  res.status(200).send(mealService.get(req.params.id));
-});
+router.get('/', MealController.fetchAllMeals);
+router.post('/', MealController.addMeal);
+router.get('/:id', MealController.getSingleMeal);
 
 export default router;

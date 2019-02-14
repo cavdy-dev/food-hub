@@ -1,48 +1,31 @@
 import Meal from '../models/Meal.model';
+import dummyData from '../utils/dummyData';
 
-class MealService {
+const MealService = {
   fetchAllMeals() {
-    this.meals = [{
-      id: 1,
-      name: 'Jollof Rice',
-      size: 'plates',
-      price: '500',
-      currency: 'NGN',
-    },
-    {
-      id: 2,
-      name: 'Fried Rice',
-      size: 'plates',
-      price: '500',
-      currency: 'NGN',
-    },
-    {
-      id: 3,
-      name: 'Coconut Rice',
-      size: 'plates',
-      price: '500',
-      currency: 'NGN',
-    },
-    ];
-
-    return this.meals.map((data) => {
-      const meal = new Meal();
-      meal.id = data.id;
-      meal.name = data.name;
-      meal.size = data.size;
-      meal.price = data.price;
-      meal.currency = data.currency;
-      return meal;
+    return dummyData.meals.map((meal) => {
+      const newMeal = new Meal();
+      newMeal.id = meal.id;
+      newMeal.name = meal.name;
+      newMeal.size = meal.size;
+      newMeal.price = meal.price;
+      return newMeal;
     });
-  }
+  },
 
-  getAll() {
-    return this.fetchAllMeals();
-  }
+  addMeal(meal) {
+    const mealLength = dummyData.meals.length;
+    const lastId = dummyData.meals[mealLength - 1].id;
+    const newId = lastId + 1;
+    meal.id = newId;
+    dummyData.push(meal);
+    return meal;
+  },
 
-  get(id) {
-    return this.fetchAllMeals()[id - 1];
-  }
-}
+  getMeal(id) {
+    const meal = dummyData.meals.find(meal => meal.id = id);
+    return meal || {};
+  },
+};
 
 export default MealService;

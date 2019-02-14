@@ -2,6 +2,7 @@ import MenuService from '../services/menu.service';
 
 // created our menu controller
 const MenuController = {
+  // get menu of the day
   getMenuOfDay(req, res) {
     const menu = MenuService.getMenuOfDay();
     return res.json({
@@ -10,6 +11,7 @@ const MenuController = {
     }).status(200);
   },
 
+  // Add menu of the day
   addMenuOfDay(req, res) {
     const newMenu = req.body;
     const updatedMenu = MenuService.addMenuOfDay(newMenu);

@@ -1,7 +1,9 @@
 import Meal from '../models/Meal.model';
 import dummyData from '../utils/dummyData';
 
+// created meal service object;
 const MealService = {
+  // fetching all the data/meals
   fetchAllMeals() {
     return dummyData.meals.map((meal) => {
       const newMeal = new Meal();
@@ -13,6 +15,7 @@ const MealService = {
     });
   },
 
+  // adding meal
   addMeal(meal) {
     const mealLength = dummyData.meals.length;
     const lastId = dummyData.meals[mealLength - 1].id;
@@ -22,6 +25,7 @@ const MealService = {
     return meal;
   },
 
+  // getting meal by id
   getMeal(id) {
     const meal = dummyData.meals.find(meal => meal.id == id);
     return meal || {};

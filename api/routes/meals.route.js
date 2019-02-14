@@ -8,6 +8,10 @@ router.get('/', (req, res) => {
   res.status(200).send(mealService.getAll());
 });
 
+router.post('/', (req, res) => {
+  res.status(200).send(mealService.addMeal(req.body));
+});
+
 router.get('/:id', (req, res) => {
   res.status(200).send(mealService.get(req.params.id));
 });

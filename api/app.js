@@ -5,7 +5,7 @@ import mealsRoute from './routes/meals.route';
 
 // instantiate expressjs
 const app = express();
-const PORT = 5700;
+const PORT = 5800;
 
 app.use(bodyParser.json());
 

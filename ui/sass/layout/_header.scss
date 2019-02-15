@@ -1,0 +1,28 @@
+.header {
+  height: 50vh;
+  background-image: linear-gradient(to right,
+    rgba($color-primary-light, .8),
+    rgba($color-primary-dark, .8)),
+    url(../img/food4.jpg);
+  background-size: cover;
+  background-position: top;
+  position: relative;
+
+  &__menu-box {
+    position: absolute;
+    top: 2rem;
+    left: 4rem;
+  }
+
+  &__logo {
+    font-size: 3.5rem;
+  }
+
+  &__text-box {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+  }
+}

@@ -236,7 +236,38 @@ body {
     box-shadow: 0 2.5rem 4rem rgba(0, 0, 0, 0.5); }
 
 .motd__text-box {
-  padding: 4rem 0 0 5rem; }
+  padding: 4rem 0 0 3rem; }
+
+.order__photo-main {
+  width: 100%;
+  box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.4);
+  border-radius: .2rem;
+  transition: all .2s;
+  outline-offset: 1rem; }
+  .order__photo-main:hover {
+    outline: 1rem solid #55c57a;
+    transform: scale(1.05) translateY(-0.5rem);
+    box-shadow: 0 2.5rem 4rem rgba(0, 0, 0, 0.5); }
+
+.order__text-box {
+  padding: 4rem 0 0 3rem; }
+
+.order__description-box {
+  border: 0.2rem solid rgba(184, 182, 182, 0.2);
+  padding: 1rem; }
+
+.order__description {
+  height: 4rem;
+  background-color: #777777;
+  color: #ffffff;
+  font-size: 2rem;
+  font-weight: 700;
+  text-align: center; }
+  .order__description-details {
+    font-size: 1.6rem; }
+  .order__description-ingredients {
+    padding-top: 1rem;
+    font-size: 1.6rem; }
 
 .footer {
   height: 25rem;
@@ -298,6 +329,9 @@ body {
     transform: translate(-50%, -50%);
     text-align: center; }
 
-.section-motd, .section-meals {
+#min-header {
+  height: 20vh; }
+
+.section-motd, .section-meals, .section-order {
   background-color: #e6e4e4;
   padding: 3rem 2rem; }

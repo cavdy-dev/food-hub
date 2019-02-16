@@ -229,6 +229,21 @@ body {
 .motd__text-box {
   padding: 4rem 0 0 5rem; }
 
+.footer {
+  height: 25rem;
+  background-color: #161616; }
+  .footer__box {
+    padding-top: 7rem;
+    color: #b8b6b6; }
+  .footer__logo {
+    font-size: 4rem; }
+  .footer__description {
+    font-size: 1.6rem; }
+  .footer__second-details {
+    font-size: 1.6rem; }
+  .footer__third-details {
+    font-size: 1.6rem; }
+
 .row {
   max-width: 114rem;
   margin: 0 auto; }

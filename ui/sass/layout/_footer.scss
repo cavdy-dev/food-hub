@@ -1,0 +1,25 @@
+.footer {
+  height: 25rem;
+  background-color: $color-black-2;
+
+  &__box {
+    padding-top: 7rem;
+    color: $color-grey-light-3;
+  }
+
+  &__logo {
+    font-size: 4rem;
+  }
+
+  &__description {
+    font-size: 1.6rem;
+  }
+
+  &__second-details {
+    font-size: 1.6rem;
+  }
+
+  &__third-details {
+    font-size: 1.6rem;
+  }
+}

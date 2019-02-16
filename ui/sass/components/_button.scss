@@ -36,6 +36,15 @@
     }
   }
 
+  &--yellow {
+    background-color: $color-secondary-light;
+    color: $color-grey-dark;
+
+    &::after {
+      background-color: $color-secondary-light;
+    }
+  }
+
   &--green {
     background-color: $color-primary;
     color: $color-white;

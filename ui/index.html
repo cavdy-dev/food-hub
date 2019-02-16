@@ -1,55 +1,51 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Food Hub</title>
-    <link
-      href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="./css/style.css" />
-  </head>
 
-  <body>
-    <!--Header / Showcase-->
-    <header class="header">
-      <div class="header__menu-box">
-        <h4 class="header__logo">LOGO</h4>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <title>Food Hub</title>
+  <link href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900" rel="stylesheet" />
+  <link rel="stylesheet" href="./css/font-icon.css">
+  <link rel="stylesheet" href="./css/style.css" />
+</head>
+
+<body>
+  <!--Header / Showcase-->
+  <header class="header">
+    <div class="header__menu-box">
+      <h4 class="header__logo">LOGO</h4>
+    </div>
+
+    <div class="header__text-box">
+      <h1 class="heading-primary">
+        <div class="heading-primary--main">Welcome to fooHub</div>
+        <div class="heading-primary--sub">Your #1 online food vendor</div>
+      </h1>
+
+      <a href="#" class="btn btn--white btn--animated">Order Today</a>
+    </div>
+  </header>
+
+  <!--Main-->
+  <main>
+    <!--Meal of the day (motd)-->
+    <section class="section-motd">
+      <div class="u-center-text u-margin-bottom-medium u-margin-top-small">
+        <h2 class="heading-secondary">
+          Meal of the day
+        </h2>
       </div>
 
-      <div class="header__text-box">
-        <h1 class="heading-primary">
-          <div class="heading-primary--main">Welcome to fooHub</div>
-          <div class="heading-primary--sub">Your #1 online food vendor</div>
-        </h1>
-
-        <a href="#" class="btn btn--white btn--animated">Order Today</a>
-      </div>
-    </header>
-
-    <!--Main-->
-    <main>
-      <!--Meal of the day (motd)-->
-      <section class="motd">
-        <div class="u-center-text u-margin-bottom-medium u-margin-top-medium">
-          <h2 class="heading-secondary">
-            Meal of the day
-          </h2>
-        </div>
-
-        <div class="row">
-          <div class="col-1-of-2">
-            <div class="motd__photo">
-              <img
-                src="./img/food.jpg"
-                alt="motd__photo"
-                class="motd__photo-main"
-              />
-            </div>
+      <div class="row">
+        <div class="col-1-of-2">
+          <div class="motd__photo">
+            <img src="./img/food.jpg" alt="motd__photo" class="motd__photo-main" />
           </div>
-          <div class="col-1-of-2">
+        </div>
+        <div class="col-1-of-2">
+          <div class="motd__text-box">
             <h3 class="heading-tetiary u-margin-bottom-small">
               Plantain Sauce
             </h3>
@@ -70,7 +66,213 @@
             <a href="#" class="btn btn--green">add to cart</a>
           </div>
         </div>
-      </section>
-    </main>
-  </body>
+      </div>
+
+    </section>
+
+    <!--Meals Section-->
+    <section class="section-meals">
+      <div class="u-center-text u-margin-bottom-medium u-margin-top-medium">
+        <h2 class="heading-secondary">
+          Meals
+        </h2>
+      </div>
+
+      <div class="row">
+        <div class="col-1-of-3">
+          <div class="card">
+            <!--Card Front-->
+            <div class="card__side card__side--front">
+              <img src="./img/food3.jpg" alt="card__image" class="card__image card__sp">
+              <div class="card__details card__sp">
+                <h4>Fried Sauce</h4>
+                <p class="card__details-ingredient">Onion, Tomato, Potato Salad</p>
+                <p class="card__details-price">#1200</p>
+              </div>
+            </div>
+
+            <!--Card Back-->
+            <div class="card__side card__side--back">
+              <div class="card__cta">
+                <a href="#" class="btn btn--white">Add to cart</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-1-of-3">
+          <div class="card">
+            <!--Card Front-->
+            <div class="card__side card__side--front">
+              <img src="./img/food3.jpg" alt="card__image" class="card__image card__sp">
+              <div class="card__details card__sp">
+                <h4>Fried Sauce</h4>
+                <p class="card__details-ingredient">Onion, Tomato, Potato Salad</p>
+                <p class="card__details-price">#1200</p>
+              </div>
+            </div>
+
+            <!--Card Back-->
+            <div class="card__side card__side--back">
+              <div class="card__cta">
+                <a href="#" class="btn btn--white">Add to cart</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-1-of-3">
+          <div class="card">
+            <!--Card Front-->
+            <div class="card__side card__side--front">
+              <img src="./img/food3.jpg" alt="card__image" class="card__image card__sp">
+              <div class="card__details card__sp">
+                <h4>Fried Sauce</h4>
+                <p class="card__details-ingredient">Onion, Tomato, Potato Salad</p>
+                <p class="card__details-price">#1200</p>
+              </div>
+            </div>
+
+            <!--Card Back-->
+            <div class="card__side card__side--back">
+              <div class="card__cta">
+                <a href="#" class="btn btn--white">Add to cart</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-1-of-3">
+          <div class="card">
+            <!--Card Front-->
+            <div class="card__side card__side--front">
+              <img src="./img/food3.jpg" alt="card__image" class="card__image card__sp">
+              <div class="card__details card__sp">
+                <h4>Fried Sauce</h4>
+                <p class="card__details-ingredient">Onion, Tomato, Potato Salad</p>
+                <p class="card__details-price">#1200</p>
+              </div>
+            </div>
+
+            <!--Card Back-->
+            <div class="card__side card__side--back">
+              <div class="card__cta">
+                <a href="#" class="btn btn--white">Add to cart</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-1-of-3">
+          <div class="card">
+            <!--Card Front-->
+            <div class="card__side card__side--front">
+              <img src="./img/food3.jpg" alt="card__image" class="card__image card__sp">
+              <div class="card__details card__sp">
+                <h4>Fried Sauce</h4>
+                <p class="card__details-ingredient">Onion, Tomato, Potato Salad</p>
+                <p class="card__details-price">#1200</p>
+              </div>
+            </div>
+
+            <!--Card Back-->
+            <div class="card__side card__side--back">
+              <div class="card__cta">
+                <a href="#" class="btn btn--white">Add to cart</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-1-of-3">
+          <div class="card">
+            <!--Card Front-->
+            <div class="card__side card__side--front">
+              <img src="./img/food3.jpg" alt="card__image" class="card__image card__sp">
+              <div class="card__details card__sp">
+                <h4>Fried Sauce</h4>
+                <p class="card__details-ingredient">Onion, Tomato, Potato Salad</p>
+                <p class="card__details-price">#1200</p>
+              </div>
+            </div>
+
+            <!--Card Back-->
+            <div class="card__side card__side--back">
+              <div class="card__cta">
+                <a href="#" class="btn btn--white">Add to cart</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-1-of-3">
+          <div class="card">
+            <!--Card Front-->
+            <div class="card__side card__side--front">
+              <img src="./img/food3.jpg" alt="card__image" class="card__image card__sp">
+              <div class="card__details card__sp">
+                <h4>Fried Sauce</h4>
+                <p class="card__details-ingredient">Onion, Tomato, Potato Salad</p>
+                <p class="card__details-price">#1200</p>
+              </div>
+            </div>
+
+            <!--Card Back-->
+            <div class="card__side card__side--back">
+              <div class="card__cta">
+                <a href="#" class="btn btn--white">Add to cart</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-1-of-3">
+          <div class="card">
+            <!--Card Front-->
+            <div class="card__side card__side--front">
+              <img src="./img/food3.jpg" alt="card__image" class="card__image card__sp">
+              <div class="card__details card__sp">
+                <h4>Fried Sauce</h4>
+                <p class="card__details-ingredient">Onion, Tomato, Potato Salad</p>
+                <p class="card__details-price">#1200</p>
+              </div>
+            </div>
+
+            <!--Card Back-->
+            <div class="card__side card__side--back">
+              <div class="card__cta">
+                <a href="#" class="btn btn--white">Add to cart</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-1-of-3">
+          <div class="card">
+            <!--Card Front-->
+            <div class="card__side card__side--front">
+              <img src="./img/food3.jpg" alt="card__image" class="card__image card__sp">
+              <div class="card__details card__sp">
+                <h4>Fried Sauce</h4>
+                <p class="card__details-ingredient">Onion, Tomato, Potato Salad</p>
+                <p class="card__details-price">#1200</p>
+              </div>
+            </div>
+
+            <!--Card Back-->
+            <div class="card__side card__side--back">
+              <div class="card__cta">
+                <a href="#" class="btn btn--white">Add to cart</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!--View More Meals Button-->
+      <div class="u-center-text u-margin-top-medium">
+        <a href="#" class="btn btn--green">More Meals <i class="icon-basic-paperplane"></i></a>
+      </div>
+    </section>
+
+  </main>
+
+</body>
+
 </html>

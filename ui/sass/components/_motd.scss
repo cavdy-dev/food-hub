@@ -19,5 +19,17 @@
 
   &__text-box {
     padding: 4rem 0 0 3rem;
+
+    @include respond(tab-port) {
+      padding: 0;
+    }
+  }
+
+  &__btn {
+    @include respond(tab-port) {
+      display: block;
+      width: 100%;
+      border-radius: .7rem !important;
+    }
   }
 }

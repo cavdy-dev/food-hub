@@ -1,0 +1,50 @@
+.checkout {
+  height: auto;
+  padding: 2rem;
+  margin: 3rem 0;
+  background-color: $color-grey-background;
+
+  &__heading {
+    font-size: 2rem;
+    color: $color-black;
+    padding-bottom: 1rem;
+    border-bottom: .2rem solid rgba($color-grey-light-3, .4);
+  }
+
+  &__details {
+    width: 100%;
+    font-size: 1.5rem;
+
+    ul {
+      list-style: none;
+
+      li {
+        margin-bottom: 1rem;
+
+        &:first-child,
+        &:last-child {
+          font-weight: 800;
+        }
+      }
+    }
+
+    &-total {
+      float: right;
+    }
+  }
+
+  &__payment-method {
+    margin: 2rem 0;
+
+    &-heading {
+      font-size: 1.7rem;
+      color: $color-black;
+    }
+
+    &-body {
+      height: 10rem;
+      background-color: $color-white;
+      padding: 2rem;
+    }
+  }
+}

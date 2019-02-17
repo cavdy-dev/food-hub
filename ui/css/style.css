@@ -116,6 +116,12 @@ body {
   .heading-secondary:hover {
     transform: translateY(-1rem) scale(1);
     text-shadow: 0.5rem 1rem 2rem rgba(0, 0, 0, 0.2); }
+  @media (max-width: 56.25em) {
+    .heading-secondary {
+      font-size: 2rem; } }
+  @media (max-width: 37.5em) {
+    .heading-secondary {
+      font-size: 1.5rem; } }
 
 .heading-tetiary, .heading-tetiary-2 {
   font-size: 2rem;

@@ -4,7 +4,7 @@
   &:visited {
     text-transform: uppercase;
     text-decoration: none;
-    padding: 1.5rem 4rem;
+    padding: 1.2rem 1.5rem;
     display: inline-block;
     border-radius: 10rem;
     transition: all 0.2s;
@@ -70,5 +70,15 @@
   &--animated {
     animation: moveInFromBottom 3s ease-out .75s;
     animation-fill-mode: backwards;
+  }
+
+  &-2 {
+    width: 100%;
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 1rem 1rem;
+    display: inline-block;
+    border-radius: .2rem;
+    font-size: $default-font-size;
   }
 }

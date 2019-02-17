@@ -13,11 +13,11 @@ body {
   margin-bottom: 6rem;
 
   @include respond(tab-port) {
-    margin-bottom: 4rem;
+    margin: 6.5rem 0 0 1rem;
   }
 
   @include respond(phone) {
-    margin-bottom: 2rem;
+    margin: 6.5rem 0 0 1rem;
   }
 
   &--main {

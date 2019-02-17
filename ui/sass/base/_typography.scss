@@ -56,6 +56,11 @@ body {
   font-size: $font-size-2;
   font-weight: 700;
   text-transform: uppercase;
+
+  &-2 {
+    @extend .heading-tetiary;
+    color: $color-primary-light;
+  }
 }
 
 .paragraph {

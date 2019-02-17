@@ -27,14 +27,26 @@
     }
   }
 
-  &:hover &__side--front,
-  &:active &__side--front {
+  &:hover &__side--front {
     transform: rotateY(-180deg);
   }
 
-  &:hover &__side--back,
-  &:active &__side--back {
+  &:hover &__side--back {
     transform: rotateY(0);
+  }
+
+  @include respond(tab-port) {
+    &:active &__side--front {
+      transform: rotateY(-180deg);
+    }
+
+    &:active &__side--back {
+      transform: rotateY(0);
+    }
+  }
+
+  @include respond(phone) {
+    margin-bottom: 2rem;
   }
 
   &__sp {

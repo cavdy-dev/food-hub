@@ -76,6 +76,12 @@ body {
   text-transform: uppercase;
   backface-visibility: hidden;
   margin-bottom: 6rem; }
+  @media (max-width: 56.25em) {
+    .heading-primary {
+      margin-bottom: 4rem; } }
+  @media (max-width: 37.5em) {
+    .heading-primary {
+      margin-bottom: 2rem; } }
   .heading-primary--main {
     display: block;
     font-size: 4rem;
@@ -549,7 +555,7 @@ body {
         height: 5rem;
         width: 5rem;
         top: 3rem;
-        right: 3rem; } }
+        right: 2.3rem; } }
   .navigation__background {
     height: 6rem;
     width: 6rem;
@@ -569,7 +575,7 @@ body {
         height: 4rem;
         width: 4rem;
         top: 3.5rem;
-        right: 3.5rem; } }
+        right: 2.8rem; } }
   .navigation__nav {
     height: 100vh;
     position: fixed;

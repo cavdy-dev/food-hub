@@ -79,10 +79,12 @@ body {
     transform: translateY(-1rem) scale(1);
     text-shadow: 0.5rem 1rem 2rem rgba(0, 0, 0, 0.2); }
 
-.heading-tetiary {
+.heading-tetiary, .heading-tetiary-2 {
   font-size: 2rem;
   font-weight: 700;
   text-transform: uppercase; }
+  .heading-tetiary-2 {
+    color: #7ed56f; }
 
 .paragraph {
   font-size: 1.6rem; }
@@ -269,6 +271,20 @@ body {
       height: 10rem;
       background-color: #ffffff;
       padding: 2rem; }
+
+.billing {
+  margin: 3rem 0; }
+  .billing__heading {
+    font-size: 2rem;
+    color: #000;
+    padding-bottom: 1rem;
+    border-bottom: 0.2rem solid rgba(184, 182, 182, 0.4); }
+  .billing__details-title {
+    font-size: 1.7rem;
+    margin-top: 1.5rem; }
+  .billing__details-content {
+    font-size: 1.5rem;
+    letter-spacing: .5rem; }
 
 .form {
   padding: 3rem; }

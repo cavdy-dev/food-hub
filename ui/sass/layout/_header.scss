@@ -11,11 +11,13 @@
   &__menu-box {
     position: absolute;
     top: 2rem;
-    left: 4rem;
+    width: 100%;
+    padding: 0 2rem;
   }
 
   &__logo {
     font-size: 3.5rem;
+    display: inline-block;
   }
 
   &__text-box {

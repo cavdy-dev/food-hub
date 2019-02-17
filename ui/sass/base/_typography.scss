@@ -66,6 +66,14 @@ body {
     transform: translateY(-1rem) scale(1);
     text-shadow: .5rem 1rem 2rem rgba($color-black, .2);
   }
+
+  @include respond(tab-port) {
+    font-size: 2rem;
+  }
+
+  @include respond(phone) {
+    font-size: 1.5rem;
+  }
 }
 
 .heading-tetiary {

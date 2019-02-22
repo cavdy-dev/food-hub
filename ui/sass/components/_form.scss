@@ -1,0 +1,21 @@
+.form {
+  padding: 3rem;
+
+  &__heading {
+    font-size: 2.5rem;
+    color: $color-black;
+    margin-bottom: 1rem;
+  }
+
+  &__input {
+    display: block;
+    height: 3.2rem;
+    width: 100%;
+    border: .2rem solid rgba($color-grey-light-3, .4);
+    padding: 1rem;
+
+    &:not(:last-child) {
+      margin-bottom: 1rem;
+    }
+  }
+}

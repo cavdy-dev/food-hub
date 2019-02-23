@@ -1,0 +1,110 @@
+.orders {
+  margin-top: 60px;
+}
+
+.orders-title {
+  font-size: 1.7rem;
+  color: #757373;
+  font-style: italic;
+  font-weight: 800;
+  padding: 0 10px;
+  margin: 20px 0;
+  text-align: center;
+}
+
+.orders .card {
+  height: 130px;
+  width: auto;
+  background-color: #ffffff;
+  padding: 10px;
+  margin-top: 5px;
+}
+
+.orders .card:hover {
+  box-shadow: 0px 0px 4px #1a1919;
+}
+
+.orders .card-body .img {
+  width: 85px;
+  height: 85px;
+  border-radius: 50%;
+  background-color: #c2c0c0;
+  text-align: center;
+  padding-top: 13px;
+  margin: 15px 0
+}
+
+.orders .card-body .img img {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+}
+
+.orders .card-body .desc h5 {
+  font-size: 1.3rem;
+  text-transform: capitalize;
+  color: #383737;
+  margin-bottom: 5px;
+}
+
+.orders .card-body .desc p {
+  font-size: 1rem;
+  text-transform: capitalize;
+  color: #696767;
+  margin-bottom: 5px;
+}
+
+.orders .card-body .desc .btn {
+  width: 100px;
+  height: 25px;
+  border: none;
+  border-radius: 50px;
+  font-size: 0.8rem;
+  font-weight: 600;
+  cursor: pointer;
+  outline: none;
+  background-color: #5aeb96;
+  color: #ffffff;
+}
+
+.orders .card-body .desc .btn:nth-child(odd):hover {
+  background-color: #e4c53f;
+}
+
+.orders .card-body .desc .btn:nth-child(even):hover {
+  background-color: #e43f3f;
+}
+
+.orders .card-body .price {
+  font-size: 1.2rem;
+  font-weight: 600;
+  font-style: italic;
+}
+
+.orders .sp {
+  float: left;
+  padding: 10px;
+}
+
+.total-price {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  margin: 0 10px 10px 0;
+}
+
+.total-price-title {
+  font-size: 1.3rem;
+}
+
+.total-price .price {
+  height: 80px;
+  width: 80px;
+  border-radius: 50%;
+  background-color: #5aeb96;
+  text-align: center;
+  padding-top: 30px;
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: #ffffff;
+}

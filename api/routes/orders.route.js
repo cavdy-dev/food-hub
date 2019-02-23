@@ -8,5 +8,6 @@ router.get('/', OrdersController.getAllOrders);
 router.post('/', OrdersController.addOrder);
 router.get('/:id', OrdersController.getSingleOrder);
 router.put('/:id', OrdersController.updateOrder);
+router.delete('/:id', OrdersController.deleteOrder);
 
 export default router;

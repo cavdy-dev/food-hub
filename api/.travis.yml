@@ -3,4 +3,8 @@ node_js:
   - "stable"
 cache:
   directories:
+<<<<<<< HEAD
     - "node_modules"
+=======
+    - "node_modules"
+>>>>>>> 49843d288cb1164536000975c2618465132fd799

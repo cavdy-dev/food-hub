@@ -56,7 +56,7 @@ describe('/GET/:id meal', () => {
   });
 });
 
-// Update meal test
+// Update meal test api
 describe('/PUT/:id meal', () => {
   it('update meal by id', (done) => {
     const meal = {

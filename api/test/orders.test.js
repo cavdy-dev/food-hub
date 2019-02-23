@@ -75,7 +75,7 @@ describe('/PUT/:id order', () => {
   });
 });
 
-// delete order test
+// delete order test api
 describe('/DELETE/:id order', () => {
   it('delete order by id', (done) => {
     chai.request(app)

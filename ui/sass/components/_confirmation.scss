@@ -1,0 +1,24 @@
+.billing {
+  margin: 3rem 0;
+  padding: 0 2rem;
+
+  &__heading {
+    font-size: 2rem;
+    color: $color-black;
+    padding-bottom: 1rem;
+    border-bottom: .2rem solid rgba($color-grey-light-3, .4);
+  }
+
+  &__details {
+
+    &-title {
+      font-size: 1.7rem;
+      margin-top: 1.5rem;
+    }
+
+    &-content {
+      font-size: 1.5rem;
+      letter-spacing: .5rem;
+    }
+  }
+}

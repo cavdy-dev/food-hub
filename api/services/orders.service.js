@@ -47,6 +47,14 @@ const OrdersService = {
     return updateOrder;
   },
 
+  // delete order by id
+  deleteOrder(id) {
+    // checking for order id and deleting it from the array
+    const order = dummyData.meals.find(order => order.id == id);
+    dummyData.meals.splice(order.id - 1, 1);
+    return {};
+  },
+
 };
 
 export default OrdersService;

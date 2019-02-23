@@ -7,5 +7,4 @@ class Meal {
     this.price = null;
   }
 }
-
 export default Meal;

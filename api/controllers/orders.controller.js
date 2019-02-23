@@ -41,6 +41,16 @@ const OrderController = {
       data: updateOrder,
     }).status(201);
   },
+
+  // Delete Order
+  deleteOrder(req, res) {
+    const [id] = [req.params.id];
+    const deleteOrder = OrdersService.deleteOrder(id);
+    return res.json({
+      status: 'success',
+      data: deleteOrder,
+    }).status(200);
+  },
 };
 
 export default OrderController;

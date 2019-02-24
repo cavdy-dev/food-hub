@@ -12,6 +12,7 @@ describe('/Get order', () => {
       .get('/api/v1/orders')
       .end((err, res) => {
         res.should.have.property('status', 200);
+        res.body.should.be.a('object');
         console.log(res.body);
         done();
       });
@@ -37,6 +38,7 @@ describe('/POST order', () => {
       .send(order)
       .end((err, res) => {
         res.should.have.property('status', 200);
+        res.body.should.be.a('object');
         console.log(res.body);
         done();
       });
@@ -50,6 +52,7 @@ describe('/GET/:id order', () => {
       .get(`/api/v1/orders/ ${3}`)
       .end((err, res) => {
         res.should.have.property('status', 200);
+        res.body.should.be.a('object');
         console.log(res.body);
         done();
       });
@@ -69,6 +72,7 @@ describe('/PUT/:id order', () => {
       .send(order)
       .end((err, res) => {
         res.should.have.property('status', 200);
+        res.body.should.be.a('object');
         console.log(res.body);
         done();
       });
@@ -82,6 +86,7 @@ describe('/DELETE/:id order', () => {
       .delete(`/api/v1/orders/ ${3}`)
       .end((err, res) => {
         res.should.have.property('status', 200);
+        res.body.should.be.a('object');
         console.log(res.body);
         done();
       });

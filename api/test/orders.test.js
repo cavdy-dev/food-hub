@@ -47,7 +47,7 @@ describe('/POST order', () => {
 describe('/GET/:id order', () => {
   it('get order by id', (done) => {
     chai.request(app)
-      .get(`/api/v1/orders/ ${2}`)
+      .get(`/api/v1/orders/ ${3}`)
       .end((err, res) => {
         res.should.have.property('status', 200);
         console.log(res.body);
@@ -65,7 +65,7 @@ describe('/PUT/:id order', () => {
       price: 50,
     };
     chai.request(app)
-      .put(`/api/v1/orders/ ${2}`)
+      .put(`/api/v1/orders/ ${3}`)
       .send(order)
       .end((err, res) => {
         res.should.have.property('status', 200);
@@ -79,7 +79,7 @@ describe('/PUT/:id order', () => {
 describe('/DELETE/:id order', () => {
   it('delete order by id', (done) => {
     chai.request(app)
-      .delete(`/api/v1/orders/ ${2}`)
+      .delete(`/api/v1/orders/ ${3}`)
       .end((err, res) => {
         res.should.have.property('status', 200);
         console.log(res.body);

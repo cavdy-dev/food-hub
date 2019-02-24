@@ -12,6 +12,7 @@ describe('/Get meals', () => {
       .get('/api/v1/meals')
       .end((err, res) => {
         res.should.have.property('status', 200);
+        res.body.should.be.a('object');
         console.log(res.body);
         done();
       });
@@ -37,6 +38,7 @@ describe('/POST meal', () => {
       .send(meal)
       .end((err, res) => {
         res.should.have.property('status', 200);
+        res.body.should.be.a('object');
         console.log(res.body);
         done();
       });
@@ -50,6 +52,7 @@ describe('/GET/:id meal', () => {
       .get(`/api/v1/meals/ ${2}`)
       .end((err, res) => {
         res.should.have.property('status', 200);
+        res.body.should.be.a('object');
         console.log(res.body);
         done();
       });
@@ -69,6 +72,7 @@ describe('/PUT/:id meal', () => {
       .send(meal)
       .end((err, res) => {
         res.should.have.property('status', 200);
+        res.body.should.be.a('object');
         console.log(res.body);
         done();
       });
@@ -82,6 +86,7 @@ describe('/DELETE/:id meal', () => {
       .delete(`/api/v1/meals/ ${2}`)
       .end((err, res) => {
         res.should.have.property('status', 200);
+        res.body.should.be.a('object');
         console.log(res.body);
         done();
       });

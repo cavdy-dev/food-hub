@@ -12,6 +12,7 @@ describe('/Get menu', () => {
       .get('/api/v1/menus')
       .end((err, res) => {
         res.should.have.property('status', 200);
+        res.body.should.be.a('object');
         console.log(res.body);
         done();
       });
@@ -31,6 +32,7 @@ describe('/POST menu', () => {
       .send(menu)
       .end((err, res) => {
         res.should.have.property('status', 200);
+        res.body.should.be.a('object');
         console.log(res.body);
         done();
       });

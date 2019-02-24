@@ -7,7 +7,7 @@ import ordersRoute from './routes/orders.route';
 
 // instantiate expressjs
 const app = express();
-const PORT = 5900;
+const PORT = process.env.PORT || 5900;
 
 app.use(bodyParser.json());
 

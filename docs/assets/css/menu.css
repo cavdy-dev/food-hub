@@ -1,0 +1,108 @@
+.container-menu {
+  min-width: 950px;
+  height: auto;
+  background-color: #ffffff;
+  position: absolute;
+  top: 250px;
+  left: 20px;
+  right: 20px;
+  border-radius: 10px;
+  z-index: 3;
+}
+
+.menu-category-title {
+  font-size: 1.7rem;
+  color: #757373;
+  font-style: italic;
+  font-weight: 800;
+  padding: 0 10px;
+  margin-top: 20px;
+  text-align: center;
+}
+
+.menu-category-content {
+  display: grid;
+  grid-template-columns: 33% 33% 30%;
+  margin-bottom: 10px;
+}
+
+.meal-category-title {
+  width: 300px;
+  font-size: 1.3rem;
+  color: #302e2e;
+  font-weight: 600;
+  margin-top: 20px;
+  padding-bottom: 8px;
+  border-bottom: 2px solid #757373;
+}
+
+.menu-category-content .card {
+  height: 130px;
+  width: 300px;
+  background-color: #ffffff;
+  border-bottom: 0.2px solid #dddada;
+  padding: 10px;
+  margin-top: 5px;
+}
+
+.menu-category-content .card:hover {
+  box-shadow: 0px 0px 4px #1a1919;
+}
+
+.menu-category-content .card-body .img {
+  width: 85px;
+  height: 85px;
+  border-radius: 50%;
+  background-color: #c2c0c0;
+  text-align: center;
+  padding-top: 13px;
+  margin: 15px 0
+}
+
+.menu-category-content .card-body .img img {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+}
+
+.menu-category-content .card-body .desc h5 {
+  font-size: 1.3rem;
+  text-transform: capitalize;
+  color: #383737;
+  margin-bottom: 5px;
+}
+
+.menu-category-content .card-body .desc p {
+  font-size: 1rem;
+  text-transform: capitalize;
+  color: #696767;
+  margin-bottom: 5px;
+}
+
+.menu-category-content .card-body .desc .btn {
+  width: 100px;
+  height: 25px;
+  border: none;
+  border-radius: 50px;
+  font-size: 0.8rem;
+  font-weight: 600;
+  cursor: pointer;
+  outline: none;
+  background-color: #5aeb96;
+  color: #ffffff;
+}
+
+.menu-category-content .card-body .desc .btn:hover {
+  background-color: #3866e6;
+}
+
+.menu-category-content .card-body .price {
+  font-size: 1.2rem;
+  font-weight: 600;
+  font-style: italic;
+}
+
+.menu-category-content .sp {
+  float: left;
+  padding: 10px;
+}

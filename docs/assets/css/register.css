@@ -1,0 +1,120 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  overflow: hidden;
+}
+
+.wrapper {
+  width: 100%;
+  height: 100vh;
+  background-image: url("../img/food4.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.overlay {
+  height: 100vh;
+  width: 100%;
+  background-color: #000;
+  opacity: 0.9;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+
+.register {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 50% 50%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 3;
+}
+
+.content {
+  color: #ffffff;
+  margin: 150px 20px;
+}
+
+.content h5 {
+  font-size: 2rem;
+}
+
+.content p:nth-child(even) {
+  font-size: 1.3rem;
+  margin-top: 30px;
+}
+
+.content p:nth-child(odd) {
+  font-size: 1.5rem;
+  margin-top: 30px;
+}
+
+.register-form {
+  background-color: #12db7757;
+  height: 100vh;
+}
+
+.register-form .login-form input[type="text"],
+.register-form .login-form input[type="password"] {
+  height: 30px;
+  width: 35%;
+  border: none;
+  padding: 5px;
+  margin: 5px 0 0 5px;
+  border-radius: 4px;
+}
+
+.register-form .login-form input[type="submit"] {
+  width: 20%;
+  height: 30px;
+  border: 1px solid #ffffff;
+  color: #ffffff;
+  background-color: transparent;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+.register-form .login-form input[type="submit"]:hover,
+.register-form .registration-form input[type="submit"]:hover {
+  color: #12db77;
+  background-color: #ffffff;
+}
+
+.register-form .registration-form {
+  margin: 150px 10px;
+}
+
+.register-form .registration-form label {
+  font-size: 1.3rem;
+}
+
+.register-form .registration-form input {
+  height: 35px;
+  width: 100%;
+  margin-bottom: 10px;
+  padding: 5px;
+  border: none;
+  border-radius: 4px;
+}
+
+.register-form .registration-form input[type="submit"] {
+  height: 35px;
+  width: 100%;
+  border: 1px solid #ffffff;
+  color: #ffffff;
+  background-color: transparent;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 1rem;
+  font-weight: 600;
+}

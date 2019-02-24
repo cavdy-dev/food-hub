@@ -12,6 +12,7 @@ describe('/Get order', () => {
       .get('/api/v1/orders')
       .end((err, res) => {
         res.should.have.property('status', 200);
+        res.body.should.be.a('object');
         console.log(res.body);
         done();
       });
@@ -37,19 +38,21 @@ describe('/POST order', () => {
       .send(order)
       .end((err, res) => {
         res.should.have.property('status', 200);
+        res.body.should.be.a('object');
         console.log(res.body);
         done();
       });
   });
 });
 
-// Test /Get:id route
+// // Test /Get:id route
 describe('/GET/:id order', () => {
   it('get order by id', (done) => {
     chai.request(app)
-      .get(`/api/v1/orders/ ${2}`)
+      .get(`/api/v1/orders/ ${3}`)
       .end((err, res) => {
         res.should.have.property('status', 200);
+        res.body.should.be.a('object');
         console.log(res.body);
         done();
       });
@@ -65,23 +68,25 @@ describe('/PUT/:id order', () => {
       price: 50,
     };
     chai.request(app)
-      .put(`/api/v1/orders/ ${2}`)
+      .put(`/api/v1/orders/ ${3}`)
       .send(order)
       .end((err, res) => {
         res.should.have.property('status', 200);
+        res.body.should.be.a('object');
         console.log(res.body);
         done();
       });
   });
 });
 
-// delete order test
+// delete order test api
 describe('/DELETE/:id order', () => {
   it('delete order by id', (done) => {
     chai.request(app)
-      .delete(`/api/v1/orders/ ${2}`)
+      .delete(`/api/v1/orders/ ${3}`)
       .end((err, res) => {
         res.should.have.property('status', 200);
+        res.body.should.be.a('object');
         console.log(res.body);
         done();
       });

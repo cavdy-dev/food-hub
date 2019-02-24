@@ -5,7 +5,7 @@
   "main": "app.js",
   "scripts": {
     "start": "nodemon --exec babel-node app.js",
-    "test": "mocha --require @babel/register || true"
+    "test": "mocha --require @babel/register --exit || true"
   },
   "repository": {
     "type": "git",

@@ -404,6 +404,17 @@ body {
     .form__input:not(:last-child) {
       margin-bottom: 1rem; }
 
+.form-body {
+  height: 30%;
+  width: 60%;
+  background-color: aliceblue;
+  text-align: center;
+  padding: 3rem;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); }
+
 .motd__photo-main {
   width: 100%;
   box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.4);
@@ -532,6 +543,9 @@ body {
 
 #min-header {
   height: 20vh; }
+
+#max-header {
+  height: 100vh; }
 
 .navigation {
   display: none; }

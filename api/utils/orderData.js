@@ -1,6 +1,6 @@
 // Created a random json data
 export default {
-  meals: [{
+  orders: [{
       id: 1,
       name: 'Soup',
       size: 'small',

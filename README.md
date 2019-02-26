@@ -1,8 +1,6 @@
 # food hub
 
-[![Build Status](https://travis-ci.org/Cavdy/food-hub.svg?branch=order-api-test)](https://travis-ci.org/Cavdy/food-hub)
-
-[![Maintainability](https://api.codeclimate.com/v1/badges/2125ffc869ccec6424a4/maintainability)](https://codeclimate.com/github/Cavdy/food-hub/maintainability)
+[![Build Status](https://travis-ci.org/Cavdy/food-hub.svg?branch=order-api-test)](https://travis-ci.org/Cavdy/food-hub) [![Coverage Status](https://coveralls.io/repos/github/Cavdy/food-hub/badge.svg?branch=development)](https://coveralls.io/github/Cavdy/food-hub?branch=development) [![Maintainability](https://api.codeclimate.com/v1/badges/2125ffc869ccec6424a4/maintainability)](https://codeclimate.com/github/Cavdy/food-hub/maintainability) [![Test Coverage](https://api.codeclimate.com/v1/badges/2125ffc869ccec6424a4/test_coverage)](https://codeclimate.com/github/Cavdy/food-hub/test_coverage)
 
 ## Getting Started
 

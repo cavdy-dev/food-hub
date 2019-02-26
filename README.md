@@ -2,6 +2,8 @@
 
 [![Build Status](https://travis-ci.org/Cavdy/food-hub.svg?branch=order-api-test)](https://travis-ci.org/Cavdy/food-hub)
 
+[![Maintainability](https://api.codeclimate.com/v1/badges/2125ffc869ccec6424a4/maintainability)](https://codeclimate.com/github/Cavdy/food-hub/maintainability)
+
 ## Getting Started
 
 ## Clone the Repository.

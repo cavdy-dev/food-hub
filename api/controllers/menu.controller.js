@@ -21,6 +21,26 @@ const MenuController = {
     }).status(201);
   },
 
+  // Update Menu
+  updateMenuOfDay(req, res) {
+    const [id] = [req.params.id];
+    const newMenu = req.body;
+    const updateMenu = MenuService.updateMenuOfDay(id, newMenu);
+    return res.json({
+      status: 'success',
+      data: updateMenu,
+    }).status(201);
+  },
+
+  // Delete Menu
+  deleteMenuOfDay(req, res) {
+    const [id] = [req.params.id];
+    const deleteMenu = MenuService.deleteMenuOfDay(id);
+    return res.json({
+      status: 'success',
+      data: deleteMenu,
+    }).status(200);
+  },
 };
 
 export default MenuController;

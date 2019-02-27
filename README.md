@@ -48,14 +48,25 @@ https://github.com/Cavdy/food-hub.git
 </tr>
 <tr>
 	<td>GET</td>
-	<td>api/v1/menu/</td>
+	<td>api/v1/menus/</td>
 	<td>Caterers and Users can Get the menu for the day </td>
 </tr>
 <tr>
 	<td>POST</td>
-	<td>api/v1/menu/</td>
+	<td>api/v1/menus/</td>
 	<td>Caterers can Set a menu for the day</td>
 </tr>
+<tr>
+	<td>PUT</td>
+	<td>api/vi/menus/:menusId</td>
+	<td>Caterers can update their menu of the day</td>
+</tr>
+<tr>
+	<td>DELETE</td>
+	<td>api/v1/menus/:menusId</td>
+	<td>Caterers can delete their menu of the day</td>
+</tr>
+<tr>
 <tr>
 	<td>GET</td>
 	<td>api/v1/orders</td>

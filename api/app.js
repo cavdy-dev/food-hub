@@ -1,10 +1,12 @@
-import express from 'express';
+const express = require('express');
 // body parser to read the data
-import bodyParser from 'body-parser';
-import loginRoute from './routes/login.route';
-import mealsRoute from './routes/meals.route';
-import menuRoute from './routes/menu.routes';
-import ordersRoute from './routes/orders.route';
+const bodyParser = require('body-parser');
+const loginRoute = require('./routes/Login');
+const mealRoute = require('./routes/Meal');
+// import menuRoute from './routes/menu.routes';
+const orderRoute = require('./routes/Order');
+const menuRoute = require('./routes/Menu');
+const RegisterRoute = require('./routes/Register');
 
 // instantiate expressjs
 const app = express();
@@ -28,13 +30,14 @@ const verifyToken = (req, res, next) => {
 
 // creating the api version route
 app.use('/api/login', loginRoute);
-app.use('/api/v1/meals', mealsRoute);
+app.use('/api/v1/meals', mealRoute);
 app.use('/api/v1/menus', menuRoute);
-app.use('/api/v1/orders', verifyToken, ordersRoute);
+app.use('/api/v1/orders', orderRoute);
+app.use('/api/register', RegisterRoute);
 
 // listening to our port
 app.listen(PORT, () => {
-  console.log(`server running on port: ${PORT}`);
+  console.log('server running on port');
 });
 
-export default app;
+// export default app;

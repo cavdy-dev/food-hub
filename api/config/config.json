@@ -1,10 +1,11 @@
 {
   "development": {
-    "username": "postgres",
-    "password": "luvderek555",
+    "username": "foody",
+    "password": "foodering",
     "database": "foodhub",
     "host": "127.0.0.1",
-    "dialect": "postgres"
+    "dialect": "postgres",
+    "operatorsAliases": false
   },
   "test": {
     "username": "root",

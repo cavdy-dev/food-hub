@@ -1,12 +1,13 @@
 const express = require('express');
 const MealController = require('../controllers/Meal');
+const verifyToken = require('../middleware/verifyToken');
 
 const router = express.Router();
 
 router.get('/', MealController.getAllMeal);
 router.get('/:id', MealController.getMealById);
-router.post('/', MealController.createMeal);
-router.put('/:id', MealController.updateMeal);
-router.delete('/:id', MealController.deleteMeal);
+router.post('/', verifyToken, MealController.createMeal);
+router.put('/:id', verifyToken, MealController.updateMeal);
+router.delete('/:id', verifyToken, MealController.deleteMeal);
 
 module.exports = router;

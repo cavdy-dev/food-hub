@@ -9,12 +9,15 @@ module.exports = {
       },
       name: {
         type: Sequelize.STRING,
+        allowNull: false,
       },
       size: {
         type: Sequelize.STRING,
+        allowNull: false,
       },
       price: {
         type: Sequelize.INTEGER,
+        allowNull: false,
       },
       createdAt: {
         allowNull: false,
@@ -23,6 +26,10 @@ module.exports = {
       updatedAt: {
         allowNull: false,
         type: Sequelize.DATE,
+      },
+      userId: {
+        allowNull: false,
+        type: Sequelize.INTEGER,
       },
     });
   },

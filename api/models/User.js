@@ -2,9 +2,10 @@ module.exports = (sequelize, DataTypes) => {
   const User = sequelize.define('User', {
     email: DataTypes.STRING,
     password: DataTypes.STRING,
+    isAdmin: false,
   }, {});
   User.associate = (models) => {
-    // associations can be defined here
+    User.hasMany(models.Order);
   };
   return User;
 };

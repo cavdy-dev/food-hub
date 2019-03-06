@@ -23,6 +23,7 @@ const LoginController = {
         jwt.sign({
           users,
         }, 'secretkey', (err, token) => {
+          res.cookie('Authorization', 'Bearer ' + token);
           return res.json({
             status: 'success',
             data: users,

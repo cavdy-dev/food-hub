@@ -9,9 +9,14 @@ module.exports = {
       },
       email: {
         type: Sequelize.STRING,
+        allowNull: false,
       },
       password: {
         type: Sequelize.STRING,
+        allowNull: false,
+      },
+      isadmin: {
+        type: Sequelize.BOOLEAN,
       },
       createdAt: {
         allowNull: false,

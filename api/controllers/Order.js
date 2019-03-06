@@ -1,5 +1,5 @@
-const jwt = require('jsonwebtoken');
-const OrderService = require('../services/Order');
+import jwt from 'jsonwebtoken';
+import OrderService from '../services/Order';
 
 const message = 'You must be logged in to order';
 
@@ -91,4 +91,4 @@ const OrderController = {
   },
 };
 
-module.exports = OrderController;
+export default OrderController;

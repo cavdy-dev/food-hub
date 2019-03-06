@@ -1,5 +1,5 @@
 const now = new Date();
-module.exports = {
+export default {
   up: (queryInterface, Sequelize) => {
     return queryInterface.bulkInsert('Meals', [
       {

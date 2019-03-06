@@ -1,4 +1,4 @@
-const Model = require('../models');
+import Model from '../models';
 
 const Meal = Model.Meal;
 
@@ -41,4 +41,4 @@ const MealService = {
   },
 };
 
-module.exports = MealService;
+export default MealService;

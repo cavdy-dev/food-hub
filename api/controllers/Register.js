@@ -1,9 +1,9 @@
-const RegisterService = require('../services/Register');
+import RegisterService from '../services/Register';
 
 const RegisterController = {
   createUser(req, res) {
     const newUser = req.body;
-    RegisterService.createUser(newUser).then((loggedIn) => {
+    RegisterService.createUser(newUser).then(() => {
       return res.json({
         status: 'success',
         data: 'Sign up successful',
@@ -12,4 +12,4 @@ const RegisterController = {
   },
 };
 
-module.exports = RegisterController;
+export default RegisterController;

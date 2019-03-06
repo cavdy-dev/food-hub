@@ -1,10 +1,10 @@
-const bcrypt = require('bcryptjs');
+import bcrypt from 'bcryptjs';
 
 const now = new Date();
 const salt = bcrypt.genSaltSync(10);
 const hash = bcrypt.hashSync('12345', salt);
 
-module.exports = {
+export default {
   up: (queryInterface) => {
     return queryInterface.bulkInsert('Users', [{
       email: 'admin@mail.com',

@@ -1,4 +1,4 @@
-const MenuService = require('../services/Menu');
+import MenuService from '../services/Menu';
 
 const MenuController = {
   createMenu(req, res) {
@@ -48,4 +48,4 @@ const MenuController = {
   },
 };
 
-module.exports = MenuController;
+export default MenuController;

@@ -1,6 +1,6 @@
-const express = require('express');
-const MealController = require('../controllers/Meal');
-const verifyToken = require('../middleware/verifyToken');
+import express from 'express';
+import MealController from '../controllers/Meal';
+import verifyToken from '../middleware/verifyToken';
 
 const router = express.Router();
 
@@ -10,4 +10,4 @@ router.post('/', verifyToken, MealController.createMeal);
 router.put('/:id', verifyToken, MealController.updateMeal);
 router.delete('/:id', verifyToken, MealController.deleteMeal);
 
-module.exports = router;
+export default router;

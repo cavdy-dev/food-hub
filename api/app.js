@@ -1,13 +1,12 @@
-const express = require('express');
+import express from 'express';
 // body parser to read the data
-const bodyParser = require('body-parser');
-const loginRoute = require('./routes/Login');
-const mealRoute = require('./routes/Meal');
-// import menuRoute from './routes/menu.routes';
-const orderRoute = require('./routes/Order');
-const menuRoute = require('./routes/Menu');
-const RegisterRoute = require('./routes/Register');
-const verifyToken = require('./middleware/verifyToken');
+import bodyParser from 'body-parser';
+import verifyToken from './middleware/verifyToken';
+import loginRoute from './routes/Login';
+import mealRoute from './routes/Meal';
+import orderRoute from './routes/Order';
+import menuRoute from './routes/Menu';
+import RegisterRoute from './routes/Register';
 
 // instantiate expressjs
 const app = express();
@@ -27,4 +26,4 @@ app.listen(PORT, () => {
   console.log('server running on port');
 });
 
-// export default app;
+export default app;

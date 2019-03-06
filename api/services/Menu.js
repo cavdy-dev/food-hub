@@ -1,4 +1,4 @@
-const Model = require('../models');
+import Model from '../models';
 
 const Menu = Model.Menu;
 
@@ -43,4 +43,4 @@ const MenuService = {
   },
 };
 
-module.exports = MenuService;
+export default MenuService;

@@ -1,4 +1,4 @@
-const Model = require('../models');
+import Model from '../models';
 
 const Order = Model.Order;
 
@@ -43,4 +43,4 @@ const OrderService = {
   },
 };
 
-module.exports = OrderService;
+export default OrderService;

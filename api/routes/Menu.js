@@ -1,12 +1,13 @@
-const express = require('express');
-const MenuController = require('../controllers/Menu');
+import express from 'express';
+import MenuController from '../controllers/Menu';
+import verifyToken from '../middleware/verifyToken';
 
 const router = express.Router();
 
 router.get('/', MenuController.getAllMenu);
 router.get('/:id', MenuController.getMenuById);
-router.post('/', MenuController.createMenu);
-router.put('/:id', MenuController.updateMenu);
-router.delete('/:id', MenuController.deleteMenu);
+router.post('/', verifyToken, MenuController.createMenu);
+router.put('/:id', verifyToken, MenuController.updateMenu);
+router.delete('/:id', verifyToken, MenuController.deleteMenu);
 
-module.exports = router;
+export default router;

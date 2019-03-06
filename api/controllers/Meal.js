@@ -1,4 +1,4 @@
-const MealService = require('../services/Meal');
+import MealService from '../services/Meal';
 
 const MealController = {
   createMeal(req, res) {
@@ -48,4 +48,4 @@ const MealController = {
   },
 };
 
-module.exports = MealController;
+export default MealController;

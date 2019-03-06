@@ -1,6 +1,6 @@
-const bcrypt = require('bcryptjs');
-const jwt = require('jsonwebtoken');
-const loginService = require('../services/Login');
+import bcrypt from 'bcryptjs';
+import jwt from 'jsonwebtoken';
+import loginService from '../services/Login';
 
 const LoginController = {
   getLogin(req, res) {
@@ -23,6 +23,7 @@ const LoginController = {
         jwt.sign({
           users,
         }, 'secretkey', (err, token) => {
+          res.cookie('Authorization', `Bearer ${token}`);
           return res.json({
             status: 'success',
             data: users,
@@ -34,4 +35,4 @@ const LoginController = {
   },
 };
 
-module.exports = LoginController;
+export default LoginController;

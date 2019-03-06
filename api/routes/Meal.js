@@ -1,12 +1,13 @@
-const express = require('express');
-const MealController = require('../controllers/Meal');
+import express from 'express';
+import MealController from '../controllers/Meal';
+import verifyToken from '../middleware/verifyToken';
 
 const router = express.Router();
 
 router.get('/', MealController.getAllMeal);
 router.get('/:id', MealController.getMealById);
-router.post('/', MealController.createMeal);
-router.put('/:id', MealController.updateMeal);
-router.delete('/:id', MealController.deleteMeal);
+router.post('/', verifyToken, MealController.createMeal);
+router.put('/:id', verifyToken, MealController.updateMeal);
+router.delete('/:id', verifyToken, MealController.deleteMeal);
 
-module.exports = router;
+export default router;

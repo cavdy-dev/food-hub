@@ -1,4 +1,4 @@
-const Model = require('../models');
+import Model from '../models';
 
 const User = Model.User;
 
@@ -14,4 +14,4 @@ const UserService = {
   },
 };
 
-module.exports = UserService;
+export default UserService;
